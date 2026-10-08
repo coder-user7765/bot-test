@@ -1,0 +1,43 @@
+{
+  "id": "4004",
+  "title": "Peugeot 208 2021",
+  "slug": "voitures-peugeot-208-2021-setif-algerie",
+  "createdAt": "2026-10-02T09:00:00Z",
+  "refreshedAt": "2026-10-07T09:00:00Z",
+  "description": "Très propre",
+  "status": "PUBLISHED",
+  "isFromStore": false,
+  "price": 2300000,
+  "pricePreview": 230,
+  "priceUnit": "MILLION",
+  "priceType": "FIXED",
+  "category": {
+    "id": "36",
+    "slug": "automobiles_vehicules-voitures"
+  },
+  "cities": [
+    {
+      "id": "1",
+      "name": "Sétif",
+      "region": {
+        "id": "19",
+        "name": "Sétif",
+        "slug": "setif"
+      }
+    }
+  ],
+  "store": null,
+  "defaultMedia": {
+    "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/x/y.jpg",
+    "mimeType": "image/jpeg"
+  },
+  "medias": [],
+  "smallDescription": [
+    {
+      "specification": {
+        "codename": "annee"
+      },
+      "valueText": "2021"
+    }
+  ]
+}

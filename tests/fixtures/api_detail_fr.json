@@ -1,0 +1,169 @@
+{
+  "id": "1001",
+  "reference": null,
+  "title": "Samsung Galaxy S24 Ultra 256 Go  neuf",
+  "slug": "smartphones-samsung-galaxy-s24-ultra-256-go-neuf-oran-algerie",
+  "description": "Téléphone neuf sous emballage.\n\n\n\nGarantie 1 an.  Livraison possible vers 58 wilayas.",
+  "createdAt": "2026-04-14T11:12:53.227409Z",
+  "refreshedAt": "2026-10-08T05:30:08.000Z",
+  "price": 185000,
+  "pricePreview": 185000,
+  "oldPrice": null,
+  "priceType": "FIXED",
+  "exchangeType": "NOT_EXCHANGEABLE",
+  "priceUnit": "UNIT",
+  "hasDelivery": true,
+  "deliveryType": "DELIVERY_FREE",
+  "hasPhone": true,
+  "hasEmail": false,
+  "quantity": 3,
+  "status": "PUBLISHED",
+  "street_name": null,
+  "category": {
+    "id": "5",
+    "slug": "telephones-smartphones",
+    "name": "Smartphones",
+    "deliveryType": "PRODUCT",
+    "parentTree": [
+      {
+        "id": "1",
+        "name": "Téléphones & Accessoires",
+        "slug": "telephones"
+      }
+    ]
+  },
+  "defaultMedia": {
+    "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/main.jpg",
+    "mimeType": "image/jpeg",
+    "thumbnail": null
+  },
+  "medias": [
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/a.jpg",
+      "mimeType": "image/jpeg",
+      "thumbnail": null
+    },
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/b.jpg",
+      "mimeType": "image/jpeg",
+      "thumbnail": null
+    },
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/c.jpg",
+      "mimeType": "image/jpeg",
+      "thumbnail": null
+    },
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/a.jpg",
+      "mimeType": "image/jpeg",
+      "thumbnail": null
+    },
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/clip.jpg",
+      "mimeType": "video/mp4",
+      "thumbnail": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "5",
+      "name": "Smartphones",
+      "slug": "telephones-smartphones",
+      "parentId": "1"
+    }
+  ],
+  "specs": [
+    {
+      "specification": {
+        "label": "Marque",
+        "codename": "marque",
+        "type": "SINGLE"
+      },
+      "value": [
+        "samsung"
+      ],
+      "valueText": [
+        "Samsung"
+      ]
+    },
+    {
+      "specification": {
+        "label": "Stockage",
+        "codename": "stockage",
+        "type": "SINGLE"
+      },
+      "value": [
+        "256"
+      ],
+      "valueText": [
+        "256 Go"
+      ]
+    },
+    {
+      "specification": {
+        "label": "Etat",
+        "codename": "etat",
+        "type": "SINGLE"
+      },
+      "value": [
+        "etat-2"
+      ],
+      "valueText": [
+        "Etat neuf"
+      ]
+    },
+    {
+      "specification": {
+        "label": "Vide",
+        "codename": "vide",
+        "type": "SINGLE"
+      },
+      "value": [],
+      "valueText": []
+    }
+  ],
+  "user": {
+    "id": "77",
+    "displayName": "TelShop"
+  },
+  "isFromStore": true,
+  "store": {
+    "id": "9",
+    "name": "TelShop Oran",
+    "slug": "telshop",
+    "description": "Vente de téléphones",
+    "url": null,
+    "followerCount": 12,
+    "announcementsCount": 40,
+    "status": "ACTIVE",
+    "locations": [
+      {
+        "location": {
+          "address": "Rue 1, Oran",
+          "region": {
+            "slug": "oran",
+            "name": "Oran"
+          }
+        }
+      }
+    ],
+    "categories": [
+      {
+        "name": "Téléphones",
+        "slug": "telephones"
+      }
+    ]
+  },
+  "cities": [
+    {
+      "id": "3101",
+      "name": "Bir el djir",
+      "region": {
+        "id": "31",
+        "name": "Oran",
+        "slug": "oran"
+      }
+    }
+  ],
+  "variants": []
+}

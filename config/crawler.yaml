@@ -1,0 +1,39 @@
+# ouedkniss-data-lab configuration. Every key can also be overridden by an
+# UPPER_CASE environment variable (or .env) and by CLI flags.
+# Limits apply to ONE invocation of `crawl`/`resume`; 0 means "no limit".
+
+base_url: "https://www.ouedkniss.com"
+api_url: "https://api.ouedkniss.com/graphql"
+
+# --- limits (conservative; raise them manually after a successful small run) ---
+max_listings: 10          # successful listings per run   (test value - raise me)
+max_pages: 20             # search-result pages per run
+max_requests: 0           # total HTTP requests per run (0 = unlimited)
+
+# --- politeness ---
+request_delay_seconds: 5      # gentle: ~1 request per 5-10 s
+request_jitter_seconds: 5     # random extra 0-5 s so requests are never evenly spaced
+max_concurrent_requests: 1
+timeout_seconds: 30
+retry_count: 3
+backoff_base_seconds: 5
+backoff_max_seconds: 300
+stop_on_block: true
+respect_robots: true
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+accept_language: "fr-FR,fr;q=0.9,ar;q=0.8,en;q=0.7"
+browser_enabled: true
+browser_channel: "chrome"
+browser_headless: false   # headed = a normal Chrome window (RDP has a desktop); headless Chrome announces itself as "HeadlessChrome"
+
+# --- what to crawl ---
+categories: []            # [] = auto-discover top-level categories from the public menu
+category_depth: 1         # 1 = top-level categories, 2 = their direct sub-categories
+page_size: 48             # listings per search page
+max_pages_per_category: 0 # 0 = until the category is exhausted
+fetch_details: true       # fetch each listing's detail record (attributes, seller, all images)
+
+# --- output ---
+save_raw_html: false      # saves the raw detail payload to data/raw/<id>.json (pages are JS-rendered)
+download_images: false    # false = store image URLs only
+data_dir: "data"

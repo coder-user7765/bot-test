@@ -1,0 +1,80 @@
+{
+  "id": "2002",
+  "reference": null,
+  "title": "شقة F3 للبيع في حيدرة",
+  "slug": "appartements-vente-f3-haydra-alger-algerie",
+  "description": "شقة F3 في الطابق الثاني، عقد ملكية، قريبة من كل المرافق.\nالسعر قابل للنقاش.",
+  "createdAt": "2026-09-01T08:00:00Z",
+  "refreshedAt": "2026-09-30T10:00:00Z",
+  "price": 18000000,
+  "pricePreview": 1.8,
+  "oldPrice": null,
+  "priceType": "NEGOTIABLE",
+  "exchangeType": null,
+  "priceUnit": "BILLION",
+  "hasDelivery": false,
+  "deliveryType": null,
+  "hasPhone": true,
+  "hasEmail": true,
+  "quantity": null,
+  "status": "PUBLISHED",
+  "street_name": "شارع الاستقلال",
+  "category": {
+    "id": "63",
+    "slug": "immobilier-vente-appartement",
+    "name": "Appartement",
+    "deliveryType": null,
+    "parentTree": [
+      {
+        "id": "62",
+        "name": "Immobilier",
+        "slug": "immobilier"
+      },
+      {
+        "id": "63",
+        "name": "Vente",
+        "slug": "immobilier-vente"
+      }
+    ]
+  },
+  "defaultMedia": null,
+  "medias": [
+    {
+      "mediaUrl": "https://cdn7.ouedkniss.com/1600/medias/announcements/images/abc/ap1.jpg",
+      "mimeType": "image/jpeg",
+      "thumbnail": null
+    }
+  ],
+  "categories": [],
+  "specs": [
+    {
+      "specification": {
+        "label": "Surface",
+        "codename": "surface",
+        "type": "NUMBER"
+      },
+      "value": [
+        95
+      ],
+      "valueText": null
+    }
+  ],
+  "user": {
+    "id": "88",
+    "displayName": "محمد"
+  },
+  "isFromStore": false,
+  "store": null,
+  "cities": [
+    {
+      "id": "1601",
+      "name": "حيدرة",
+      "region": {
+        "id": "16",
+        "name": "الجزائر",
+        "slug": "alger"
+      }
+    }
+  ],
+  "variants": []
+}

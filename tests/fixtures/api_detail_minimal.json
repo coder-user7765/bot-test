@@ -1,0 +1,33 @@
+{
+  "id": "3003",
+  "title": "  Vends   table  ",
+  "slug": "meubles-table-blida-algerie",
+  "description": null,
+  "createdAt": null,
+  "refreshedAt": "2026-10-01T00:00:00Z",
+  "price": null,
+  "pricePreview": 0,
+  "priceUnit": "MILLION",
+  "priceType": null,
+  "status": "PUBLISHED",
+  "category": {
+    "id": "502",
+    "slug": "meubles",
+    "name": "Meubles",
+    "parentTree": []
+  },
+  "defaultMedia": null,
+  "medias": [],
+  "specs": [],
+  "user": null,
+  "isFromStore": false,
+  "store": null,
+  "cities": [
+    {
+      "id": "9",
+      "name": "Blida",
+      "region": null
+    }
+  ],
+  "variants": []
+}
