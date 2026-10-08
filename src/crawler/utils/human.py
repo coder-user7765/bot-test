@@ -35,6 +35,9 @@ class HumanCadence:
 
         `sleep` lets the caller supply an interruptible sleep (so Ctrl+C is honoured)."""
         self._requests += 1
+        if self._requests == 1:  # nothing came before the first action: open it right away
+            self._last_ts = time.monotonic()
+            return
         # Determine behaviour mode first to avoid double-rolling probability
         roll = random.random()
         if roll < self.burst_probability:

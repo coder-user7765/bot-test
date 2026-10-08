@@ -238,8 +238,7 @@ class HttpClient:
         would leave the page on the API origin and skew the Origin/Referer of later calls)."""
         if self._context is None:
             return await self._send("GET", url, check_robots=False, retry=False)
-        await self._throttle()
-        self._check_budget()
+        self._check_budget()  # out-of-band and tiny: no human-pacing delay of its own
         self.requests += 1
         try:
             resp = await self._context.request.get(url, timeout=self.cfg.timeout_seconds * 1000)
