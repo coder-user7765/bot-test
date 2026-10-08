@@ -77,6 +77,13 @@ class _Retryable(Exception):
         self.retry_after = retry_after
 
 
+def _decoded_headers(headers: dict[str, str]) -> dict[str, str]:
+    """Chrome hands us the body already decompressed, so drop the headers that describe the
+    wire encoding - otherwise httpx would try to decompress it a second time."""
+    return {k: v for k, v in headers.items()
+            if k.lower() not in ("content-encoding", "content-length", "transfer-encoding")}
+
+
 def _parse_retry_after(value: str | None) -> float | None:
     if not value:
         return None
@@ -242,7 +249,7 @@ class HttpClient:
         if resp.status >= 400:
             raise FetchError(f"HTTP {resp.status}", status=resp.status,
                              retryable=resp.status in RETRYABLE_STATUSES)
-        return httpx.Response(resp.status, headers=resp.headers, content=body,
+        return httpx.Response(resp.status, headers=_decoded_headers(dict(resp.headers)), content=body,
                               request=httpx.Request("GET", url))
 
     # ---- core --------------------------------------------------------
@@ -338,7 +345,7 @@ class HttpClient:
             content = await response.body()
             return httpx.Response(
                 response.status,
-                headers=await response.all_headers(),
+                headers=_decoded_headers(await response.all_headers()),
                 content=content,
                 request=httpx.Request(method, url),
             )
@@ -363,7 +370,7 @@ class HttpClient:
         )
         return httpx.Response(
             result["status"],
-            headers=result["headers"],
+            headers=_decoded_headers(result["headers"]),
             content=result["body"].encode(),
             request=httpx.Request(method, url),
         )
