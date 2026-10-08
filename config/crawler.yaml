@@ -22,7 +22,7 @@ stop_on_block: true
 respect_robots: true
 user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 accept_language: "fr-FR,fr;q=0.9,ar;q=0.8,en;q=0.7"
-browser_enabled: true
+browser_enabled: false
 browser_channel: "chrome"
 browser_headless: false   # headed = a normal Chrome window (RDP has a desktop); headless Chrome announces itself as "HeadlessChrome"
 

@@ -46,7 +46,7 @@ class CrawlerConfig(BaseModel):
     respect_robots: bool = True
     user_agent: str = BROWSER_USER_AGENT
     accept_language: str = "fr-FR,fr;q=0.9,ar;q=0.8,en;q=0.7"
-    browser_enabled: bool = True
+    browser_enabled: bool = False
     browser_channel: str = "chrome"
     browser_headless: bool = False
     max_block_events: int = Field(3, ge=1)  # consecutive 429s / 403s before stopping
